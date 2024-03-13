@@ -1,0 +1,87 @@
+.money-item {
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.money-item__svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+.money-item.active .money-item__svg path {
+    fill: #3891B1;
+    stroke: #3891B1;
+}
+
+.money-item.active .money-item__text {
+    color: #FDEEED;
+}
+
+.money-item.inactive .money-item__svg path {
+    stroke: #D0D0D8;
+}
+
+.money-item.inactive .money-item__text {
+    color: #1C1C21;
+}
+
+.money-item.disabled .money-item__svg path {
+    stroke: #D0D0D8;
+}
+
+.money-item.disabled .money-item__text {
+    color: #D0D0D8;
+}
+
+.money-item__text {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    max-width: 18.75rem;
+    overflow: hidden;
+}
+
+.money-item__text p {
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 116%;
+}
+
+@media screen and (max-width: 1920px) {
+    .money-item__svg {
+        width: 23.5rem;
+        height: 2.5rem;
+    }
+
+    .money-item__text p {
+        font-size: 1.25rem;
+    }
+
+    .money-item__text {
+        max-width: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .money-item__svg {
+        width: 18.125rem;
+        height: 2.0625rem;
+    }
+
+    .money-item__text p {
+        font-size: 1rem;
+    }
+
+    .money-item__text {
+        max-width: 10rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .money-item__svg {
+        width: 20.625rem;
+        transform: scale(1.1);
+    }
+}

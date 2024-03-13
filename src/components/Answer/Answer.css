@@ -1,0 +1,116 @@
+.answer {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer__svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+.answer:hover .answer__svg path {
+    stroke: #1E6A8E;
+}
+
+.answer.correct .answer__svg path {
+    animation: correct 4s ease forwards;
+}
+
+@keyframes correct {
+    0%,
+    22%,
+    42%,
+    62% {
+        fill: #f7fcfe;
+        stroke: #3891B1;
+    }
+
+    20%,
+    40%,
+    60% {
+        fill: #e3f8ff;
+        stroke: #3891B1;
+    }
+
+    100% {
+        fill: #E6FAEA;
+        stroke: #47D867;
+    }
+}
+
+.answer.wrong .answer__svg path {
+    animation: wrong 4s ease forwards;
+}
+
+@keyframes wrong {
+    0%,
+    22%,
+    42%,
+    62% {
+        fill: #f7fcfe;
+        stroke: #3891B1;
+    }
+
+    20%,
+    40%,
+    60% {
+        fill: #e3f8ff;
+        stroke: #3891B1;
+    }
+
+    100% {
+        fill: #FDEEED;
+        stroke: #EC6259;
+    }
+}
+
+.answer.select .answer__svg path {
+    fill: #FFF3EB;
+    stroke: #FF8B37;
+}
+
+.answer__text {
+    font-size: 1.625rem;
+    max-width: 19.5625rem;
+    overflow: hidden;
+}
+
+.answer__text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 116%;
+}
+
+.answer__letter {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 116%;
+}
+
+@media screen and (max-width: 2560px) {
+    .answer__svg {
+        width: 32.5rem;
+        height: 7.5625rem;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .answer__svg {
+        width: 26.375rem;
+        height: 4.6875rem;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .answer__svg {
+        width: 17rem;
+        height: 3.0625rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .answer__svg {
+        width: 20rem;
+        height: 3.5625rem;
+    }
+}

@@ -1,0 +1,18 @@
+.game {
+    min-height: 100vh;
+    display: flex;
+}
+
+.game__money-desktop {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .game {
+        flex-direction: column;
+    }
+
+    .game__money-desktop {
+        display: none;
+    }
+}

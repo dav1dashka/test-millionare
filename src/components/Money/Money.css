@@ -1,0 +1,35 @@
+.money {
+    display: grid;
+    align-items: center;
+    padding: 5.375rem 0rem;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.money__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.3125rem;
+}
+
+@media screen and (max-width: 1920px) {
+    .money {
+        padding: 2.25rem 0rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .money {
+        flex: 0 0 18.125rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .money {
+        flex: 1 1 100%;
+        padding: 0rem 0rem 5.625rem 0rem;
+
+    }
+}

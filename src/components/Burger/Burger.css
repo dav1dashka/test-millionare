@@ -1,0 +1,43 @@
+.burger {
+    position: relative;
+    background-color: #F5F5F7;
+    display: none;
+    padding: 1rem 1rem 0 1rem;
+    z-index: 20;
+}
+
+.burger__button {
+    background: url('/public/img/burger-open.svg') no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 21;
+}
+
+.burger.open .burger__button {
+    background: url('/public/img/burger-close.svg') no-repeat;
+}
+
+.burger__content {
+    position: absolute;
+    top: 3.125rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.burger.open .burger__content {
+    background-color: #F5F5F7;
+    min-height: 100vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

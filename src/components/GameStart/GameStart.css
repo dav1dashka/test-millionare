@@ -1,0 +1,236 @@
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 73, 116, 0.05);
+    position: relative;
+    z-index: 1;
+}
+
+.menu:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-top: 100vh solid #fff;
+    border-right: 100vw solid transparent;
+    width: 0;
+}
+
+.menu__container {
+    margin: 0 5rem;
+    height: 100vh;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__img {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__img img {
+    flex: 0 1 114rem;
+}
+
+.menu__cover {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8rem;
+}
+
+.menu__title {
+    font-weight: 600;
+    font-size: 9.375rem;
+    line-height: 116%;
+    max-width: 78.125rem;
+}
+
+.menu__button {
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 116%;
+    text-align: center;
+}
+
+.menu__button button {
+    padding: 3.75rem 20.3125rem;
+    color: #fff;
+    background-color: #1E6A8E;
+    border-radius: 1.875rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.menu__button button:hover {
+    background-color: #3891B1;
+}
+
+.menu__button button:active {
+    background-color: #003B63;
+}
+
+@media screen and (max-width: 2560px) {
+    .menu__title {
+        font-size: 6.25rem;
+        max-width: 53.125rem;
+    }
+
+    .menu__button {
+        font-size: 3.125rem;
+    }
+
+    .menu__button button {
+        padding: 2.5rem 12.5rem;
+    }
+
+    .menu__cover {
+        row-gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .menu__title {
+        font-size: 5rem;
+        max-width: 40.625rem;
+    }
+
+    .menu__button {
+        font-size: 2.1875rem;
+    }
+
+    .menu__button button {
+        padding: 1.875rem 10.9375rem;
+    }
+
+    .menu__cover {
+        row-gap: 4.375rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .menu__title {
+        font-size: 3.5rem;
+        max-width: 28.125rem;
+    }
+
+    .menu__img img {
+        width: 18rem;
+    }
+
+    .menu__button {
+        font-size: 1.25rem;
+    }
+
+    .menu__button button {
+        padding: 1.25rem 7.8125rem;
+        border-radius: 0.75rem;
+    }
+
+    .menu__cover {
+        row-gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .menu__container {
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu__title {
+        font-size: 2.25rem;
+        max-width: 18.75rem;
+    }
+
+    .menu__button {
+        font-size: 1.25rem;
+    }
+
+    .menu__button button {
+        padding: 1.125rem 4.6875rem;
+        border-radius: 0.75rem;
+    }
+
+    .menu__cover {
+        row-gap: 2.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu__title {
+        font-size: 2.125rem;
+    }
+
+    .menu__button button {
+        padding: 1rem 3.4375rem;
+        border-radius: 0.75rem;
+    }
+
+    .menu__cover {
+        row-gap: 2.125rem;
+    }
+
+    .menu__container {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu {
+        background-color: #FFF3EB;
+    }
+
+    .menu__button button {
+        padding: 1rem 3.4375rem;
+        border-radius: 0.75rem;
+    }
+
+    .menu__cover {
+        width: 100%;
+        align-items: center;
+        row-gap: 6.375rem;
+        justify-content: space-between;
+    }
+
+    .menu__container {
+        padding: 6.375rem 0 3rem 0;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .menu__title {
+        text-align: center;
+    }
+
+    .menu__img {
+        flex: 0;
+    }
+
+    .menu__img img {
+        width: auto;
+        height: 15.625rem;
+    }
+
+    .menu__button,
+    .menu__button button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .menu__img img {
+        height: 11.5625rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu__container {
+        row-gap: 1.5rem;
+    }
+}
